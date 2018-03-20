@@ -1,0 +1,146 @@
+#overlay1 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,1);
+    z-index: 2;
+    cursor: pointer;
+}
+
+#overlay2 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,1);
+    z-index: 2;
+    cursor: pointer;
+}
+
+#text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
+
+#sidebar {
+    float: left;
+    width: 200px;
+}
+
+#sidebar2 {
+    float: right;
+    width: 70px;
+}
+
+#sidebar3 {
+	padding-left:232px;
+}
+
+#content {
+    padding-left:69px;
+}
+
+#offset1 {
+    padding-left:100px;
+}
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+.faux-input {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+  width: 0px;
+  height: 0;
+  overflow: hidden;
+  padding: 0;
+  opacity: 0;
+}
+
+.term {
+  background: #000;
+  width: 50000px;
+  height: 250px;
+  color: #aaa;
+  font-family: Monaco, monospace;
+  font-weight: 400;
+  font-smooth: never;
+  -webkit-font-smoothing : none;
+  font-size: 10.5pt;
+  padding: 3px;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  display: block;
+  line-height: 1.2em;
+  overflow-y: scroll;
+  position: relative;
+  color: #888;
+}
+
+.term-focus {
+  text-shadow: none;
+  color: #ccc;
+}
+
+.term .red {
+  color: red;
+}
+.term .blue {
+  color: blue;
+}
+.term .white {
+  color: #fff;
+}
+.term .bold {
+  font-weight: bold;
+}
+
+.bell {
+  width: 0.1em;
+  height: 1.1em;
+  line-height: 1.2em;
+  background: #fff;
+  position: absolute;
+  animation: flash 1s infinite;
+}
+
+@keyframes flash {
+  0% {
+    visibility: visible;
+  }
+  49% {
+    visibility: visible;
+  }
+  50% {
+    visibility: hidden;
+  }
+  99% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
